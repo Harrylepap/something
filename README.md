@@ -1,13 +1,9 @@
-# 🥰 Something
-Finalité du cours système d'information par les étudiants. L'application est disponible  [içi](https://somemain.herokuapp.com/)
-
-
-
+# :smile: 
 ## Installation et configuration
-A completer au fur et à mesure de l'avancement du projet.
+La branche solving_issues sera composé de plusieurs sous-branches qui seront toutes composées des differents issues. La version finale et complète du fichier readme sera dans la branche solving_issues.
 
 ```sh
 $ 
 ```
 
-**Was Here ...**
+**Was Here Sanda Mandresy**
