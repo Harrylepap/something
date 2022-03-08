@@ -5,5 +5,12 @@
 		"prenoms": "Judicael",
 		"url": "https://site-hei-exam-web1.herokuapp.com/",
 		"avatar": "https://avatars.githubusercontent.com/u/99041636?v=4"
+	},
+	{
+		"id_student": "PROFSYS1",
+		"nom": "Rakotondratompo",
+		"prenoms": "Bako Harry",
+		"url": "https://somemain.herokuapp.com/",
+		"avatar": "https://avatars.githubusercontent.com/u/67697046?v=4"
 	}
 ]

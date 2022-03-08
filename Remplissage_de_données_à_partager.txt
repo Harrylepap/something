@@ -1,9 +1,0 @@
-[
-    {
-        "id_student" : "STDD21018",
-        "nom" : "RANAIVOSON",
-        "prénom" : "Onitsiky",
-        "url" : "https://hei-sys1.herokuapp.com/",
-        "avatar" : "https://avatars.githubusercontent.com/u/98632897"
-    }
-]

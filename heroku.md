@@ -1,32 +1,58 @@
-# Déploiement d'un projet sur Heroku
+# Déploiement d'un site HTML5 sur heroku
 
-## Connexion ou création d'un nouveau compte sur Heroku
+# Prérequis
 
-Dans un premier temps, il vous faudra vous connecter à votre compte Heroku si déjà vous en avez, sinon il vous faudra en créer un nouveau.
-Cliquez [ici](https://id.heroku.com/login).
+## 1-Créer un compte HEROKU 
+    
+    - Allez sur le site [heroku] (https://signup.heroku.com/login)
+    - Entrez des données valides puis passez le test captcha
+    - Vérifiez votre mail
 
-## Création d'un nouvel app
+## 2-Se connecter à son compte Heroku
 
-En haut à droite de la page, il y a un bouton "New". Cliquez sur puis "Create new app".
+# Etapes pour le déploiement sur à l'aide de github
 
-- Entrer le nom du nouvel app sur "App name".
-- Sélectionner la région (Europe ou USA).
-- Appyuer sur Create app.
+![image](https://user-images.githubusercontent.com/98638690/157096182-7f0e8b47-c67c-438d-9923-324a853dd7fd.png)
 
- Le bouton "Add to pipeline" est facultatif. Une "pipeline" est une collection de plusieurs app.
+## Création de l'application
+    Sur le site de [Heroku] (https://dashboard.heroku.com/)
+        - Cliquer new app sur le coin droit
+        - Nommez votre application
+        - Choisissez une région (si vous choisissez l'Europe,l'application s'ouvrira plus vite en Europe)
+        - Cliquer create app
 
-## Méthode de déploiement
+## Déploiement 
 
-Il y a plusieur moyen de déploiement du projet :
+### Configuration :
+    Pour uploader notre site HTML5, CSS ,JS nous allons devoir faire une feinte à Heroku.
+    Sur le premier plan du repository : (pas dans un dossier)
+        - Créer un fichier index.php 
+        - Ecrire directement votre html sur ce php // ou alors écrivez : <?php include_once("'votre_page_index'.html"); ?>
+        - Créer un fichier composer.json
+        - Mettre {} dans ce fichier
 
-- en liant notra app à notre projet sur "Github"
-- en liant notre app à notre projet sur "Heroku Git"
-- en liant notre app à notre projet sur "Container Registry"
+![image](https://user-images.githubusercontent.com/98638690/157174276-4e41c59a-e85e-494f-ae0b-6568ba0efe78.png)
+    
+    Maintenant il faut déclarer à Heroku que notre site web est une application php :
+        - Aller sur le site web de heroku puis sur votre application
+        - Aller dans settings (voir image)
+        - Descendez jusqu'à voir "Add buildpacks"
+        - Cliquer sur le bouton et choisissez php
 
-### Déploiement via Github
+### Liaison avec github 
+        - Sur le même site, aller dans la section deploy
+        - Choisissez github comme méthode de déploiement
+        - Utilisez votre compte github et écrivez le nom du repository sur lequel vous avez mis les fichiers php et json
+        - Cliquez sur connect
+        - Descendez jusqu'à trouver un bouton 'Deploy branch'
+        - Choisissez la branche où il y a les fichiers index.php et composer.json
+        - Cliquer sur 'Deploy Branch' pour déployer votre application
 
-Déjà il vous faudra être connecté à [Github](https://github.com) sur votre appareil.
-Ensuite, chercher le repository contenant le projet à déployer, et le sélectionner en cliquant sur "Connect".
-Pour le déploiement automatique, choisir la branche à déployer, ensuite cliquer sur le bouton "Enable Automatic Deploys".
-Pour le déploiement manuel, choisir la branche à déployer, puis cliquer sur le bouton "Deploy Branch".
-Puis  plus bas, il y aura un bouton "View" pour voir le projet en production.
+ ### Afin de ne pas avoir à faire de deploy après changement(s), veuillez cliquer 'enable automatic deploys'
+
+# Pour le déploiement en utilisant Heroku CLI :
+    - Installer Heroku CLI grâce à ce [tuto] (https://devcenter.heroku.com/articles/heroku-cli)
+    - ensuite cliquer sur l'option "Heroku Git " ou "Container Registry" de la section Deploy
+
+
+# Cliquer sur View pour voir votre application. Félicitations !
