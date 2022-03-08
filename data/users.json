@@ -47,5 +47,12 @@
 		"prenom": "Anjaraniaina",
 		"url" : "https://my-hei-website.herokuapp.com/",
 		"avatar":"https://avatars.githubusercontent.com/u/98638459?v=4"
+	},
+	{
+		"id_student": "STD21032",
+		"nom": "ROBERTO",
+		"prenoms": "Niaina Franco",
+		"url": "https://hei-site-byrafra.herokuapp.com/",
+		"avatar": "https://avatars.githubusercontent.com/u/98639271?s=400&u=7ce4082b84b5d9d783090ee651b7d873e281437b&v=4"
 	}
 ]
