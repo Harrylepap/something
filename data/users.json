@@ -118,5 +118,12 @@
 		"prenoms": "Amour Bien Aimé",
 		"url": "https://heroku-app-game.herokuapp.com/",
 		"avatar": "https://avatars.githubusercontent.com/u/95756837?s=400&u=3fe0ea0bbeeb2f05dd198714dd823f0ea331c821&v=4"
+	},
+	{
+		"id_student": "STD21001",
+		"nom": "ANDRIAMANJAKA",
+		"prenoms": "Fanjasoa",
+		"url": "https://hei-web1.herokuapp.com/",
+		"avatar": "https://avatars.githubusercontent.com/u/99532034?s=400&u=7b0eb138f2d5e2e43a24405283f2b8ae095f0f3b&v=4"
 	}
 ]
