@@ -12,7 +12,7 @@ Thanks goes to these wonderfull people ✨
         <a href="https://github.com/fanjasoa18">
             <img src="https://avatars.githubusercontent.com/u/99532034?v=4" width="100;" alt="fanjasoa18"/>
             <br />
-            <sub><b>fanjasoa18</b></sub>
+            <sub><b>Fanjasoa18</b></sub>
         </a>
     </td>
     <td align="center">
