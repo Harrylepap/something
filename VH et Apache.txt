@@ -1,0 +1,50 @@
+HEBERGER PLUSIEURS SITE SUR UN SEUL SERVER APACHE?
+
+    Commencant d'abord par trouver votre site web .
+
+   Tout d’abord, commençons par étudier comment accède un navigateur à un site internet. 
+Lorsque vous entrer l’adresse d’un site dans votre navigateur (ou lorsque vous cliquez sur un lien de votre moteur de recherche favori), votre navigateur va demander à votre serveur DNS (souvent celui de votre box) à quel adresse IP se trouve ce site. Cette requête correspond à l’exécution d’un nslookup www.site.fr.
+
+$ nslookup garetacar.eu
+Server:    192.168.1.1
+Address:  192.168.1.1#53
+ 
+Non-authoritative answer:
+Name:  garetacar.eu
+Address: 149.202.51.171
+
+Une fois que votre navigateur connaît l’adresse IP du serveur du site, il va le contacter sur le port que vous aurez spécifié.
+
+Ensuite votre navigateur va envoyer une requête HTTP GET au serveur WEB lui indiquant la page désirée et le site WEB que vous désirez voir s’afficher.
+GET / HTTP/1.1
+Host: garetacar.eu
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0
+Accept: */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+
+C’est donc à partir de ces informations que votre serveur WEB va renvoyer la page correspondant à la requête. Comme vous pouvez le voir dans la requête nous avons une valeur Host, c’est celle-ci que nous utiliserons pour savoir quel site afficher.
+Les VirtualHosts
+
+Les VirtualHosts (VH) est un système permettant à partir d’une seule et unique IP de fournir plusieurs sites. Ces différents sites peuvent être servit sur des ports différents : 80 (HTTP), 443 (HTTPS) ou encore sur des noms de domaines différents.
+
+J’ai l’habitude de créer un fichier de config apache par VH, cela me permet de les activer et désactiver à mon bon vouloir. Sous Debian, les fichiers de VirtualHosts sont à créer dans le répertoire /etc/apache2/sites-available/ sous un nom du style monsite.conf. 
+Le .conf est important car sinon votre fichier n’est pas considéré comme un fichier de config.
+
+/etc/apache2/sites-available/monsite.com.conf
+
+<VirtualHost *:80>
+    ServerName monsite.com
+    DocumentRoot /var/www/monsite.com
+</VirtualHost>
+	
+Cette configuration de base suffit pour faire vivre les deux sites! le *:80 signifie qu’Apache envisagera d’utiliser cet hôte virtuel pour toute demande arrivant sur le port 80. Ils seront dissipés plus tard par le ServerName déclarations
+Maintenant que notre fichier de configuration est prêt, nous devons l’activer.
+
+1 # a2ensite monsite.conf
+2 Enabling site parks.
+3 To activate the new configuration, you need to run:
+4 service apache2 reload
+5 # service apache2 reload
+
+Voila votre premier VirtualHost est actif, vous pouvez en créer autant que vous le souhaitez dans les limites de capacité de votre serveur.
