@@ -125,5 +125,12 @@
 		"prenoms": "Ny Anjaratiana Mahefa",
 		"url": "https://sysherokuapp.herokuapp.com/",
 		"avatar": "https://avatars.githubusercontent.com/NiceGuyMe"
+	},
+	{
+		"id_student": "STD21020",
+		"nom": "RANDRIAMANGA",
+		"prenoms": "Iloniavo",
+		"url": "https://sysproject.herokuapp.com/",
+		"avatar": "https://avatars.githubusercontent.com/Iloniavo"
 	}
 ]
