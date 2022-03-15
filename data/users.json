@@ -125,5 +125,12 @@
 		"prenoms": "Ny Anjaratiana Mahefa",
 		"url": "https://sysherokuapp.herokuapp.com/",
 		"avatar": "https://avatars.githubusercontent.com/NiceGuyMe"
+	},
+	{
+		"id_student": "STD21050",
+		"nom": "RAKOTONIRINA",
+		"prenoms": "Jean Roussel",
+		"url": "https://test-heroku-hei.herokuapp.com/",
+		"avatar": "https://avatars.githubusercontent.com/J-Roussel"
 	}
 ]
