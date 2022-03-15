@@ -125,5 +125,12 @@
 		"prenoms": "Ny Anjaratiana Mahefa",
 		"url": "https://sysherokuapp.herokuapp.com/",
 		"avatar": "https://avatars.githubusercontent.com/NiceGuyMe"
+	},
+	{
+		"id_student": "STD21038",
+		"nom": "ANDRIANARISOA",
+		"prenoms": "Hajatiana Tantely",
+		"url": "https://challenjs.herokuapp.com/",
+		"avatar": "https://avatars.githubusercontent.com/u/96466759?s=400&u=072c9e0d6c520ff015b549694e9eb0f4e68364a7&v=4"
 	}
 ]
