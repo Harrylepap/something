@@ -1,0 +1,28 @@
+{
+  "name": "something",
+  "version": "1.0.0",
+  "description": "Finalité du cours système d'information par les étudiants. L'application est disponible  [içi](https://somemain.herokuapp.com/)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iloniavo/something.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iloniavo/something/issues"
+  },
+  "homepage": "https://github.com/Iloniavo/something#readme",
+  "devDependencies": {
+    "remark-cli": "^10.0.1",
+    "remark-gfm": "^3.0.1",
+    "remark-git-contributors": "^4.0.1"
+  }
+}
