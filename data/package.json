@@ -1,0 +1,17 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "Avant tout , il vous faut d'abord installer wamp serveur dans votre machine",
+  "main": "urs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "remark-cli": "^10.0.1",
+    "remark-gfm": "^3.0.1",
+    "remark-git-contributors": "^4.0.1"
+  }
+}
